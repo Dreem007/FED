@@ -10,6 +10,13 @@
 	</head>
 
 	<body>
+
+		<nav>
+			<ul>
+				<li><a href="toets1-opleiding.html">De opleiding</a></li>
+				<li><a href="toets1-aanmelden.html">Aanmelden</a></li>
+			</ul>
+		</nav>
 		
 		<article>
 
@@ -31,19 +38,19 @@
 		</section>
 		
 		<section>
-			<p>
-				Contactgegevens:
-			</p>
 				<form action="demo_form.asp" method="get">
 					<fieldset>
-						  Naam: <input type="text" required name="naam"><br />
-						  Bedrijf: <input type="text" required name="bedrijf"><br />
-						  Adres: <input type="text" required name="adres">  Huisnum.: <input type="number" required name="huisnum"> Toevoegingen: <input type="text" name="huisnumtoevoeging"><br />
-						  Postcode: <input type="text" required name="postcode" placeholder="xxxx xx"><br />
-						  Plaats: <input type="text" required name="plaats"><br />
-						  (m.) Telefoon: <input type="tel" required name="telnummer"><br />
-						  E-mail: <input type="email" required name="email"><br />
-						  <input type="submit" value="Submit">
+						<legend>Contactgegevens:</legend>
+						<label for="name">Naam:</label> <input type="text" id="name"><br />
+						<label for="company">Bedrijf:</label> <input type="text" id="company"><br />
+						<label for="address">Adres:</label> <input type="text" id="address">  
+						<label for="housenum">Huisnum.:</label> <input type="number" id="housenum">
+						<label for="additional">Toevoegingen:</label> <input type="text" id="additional"><br />
+						<label for="zipcode">Postcode:</label> <input type="text" id="zipcode" placeholder="xxxx xx"><br />
+						<label for="city">Plaats:</label> <input type="text" id="city"><br />
+						<label for="tel">(m.) Telefoon:</label> <input type="tel" id="tel"><br />
+						<label for="email">E-mail:</label> <input type="email" id="email"><br />
+						<input type="submit" value="Submit">
 					</fieldset>
 				</form>
 		</section>
@@ -53,117 +60,58 @@
 
 				<select>
 					<option value="project">voor een project</option>
-					<option value="stagebedrijf">als stagebedrijf</option>
+					<option value="company">als stagebedrijf</option>
 				</select>
 
 				.
 			</p>
-
-			<table>
-				 <tr>
-			    	<th>Project</th>
-				    <th>Stage</th>
-				</tr>
-
-				<tr>
-				    <td>1. Titel: <input type="text" name="titel"></td>
-				    <td>Geschikt voor:
-				    	<select>
-							<option value="v1">tweedejaars studenten</option>
-							<option value="examenjaar">afstudeer studenten</option>
-							<option value="onbekend">onbekend</option>
-						</select>
-				    </td>
-				</tr>
-
-				<tr>
-					<td colspan="2">2. Opdrachtomschrijving: <input type="text" name="opdrachtomschrijving"></td>
-				</tr>
-				
-				<tr>
-					<td colspan="2">3. Doelgroepomschrijving: <input type="text" name="doelgroepomschrijving"></td>
-				</tr>
-
-				<tr>
-					<td colspan="2">4. Doelstelling/intentie van het project: <input type="text" name="doelstelling"></td>
-				</tr>
-
-				<tr>
-					<td colspan="2">5. Looptijd: <input type="text" name="looptijd" placeholder="x weken"></td>
-				</tr>
-
-				<tr>
-					<td colspan="2">6. Deadline: <input type="date" name="deadline"></td>
-				</tr>
-
-				<tr>
-					<td>Geschikt voor:
-						<select>
-							<option value="propedeuse">1. eerstejaars studenten</option>
-							<option value="v1">2. tweedejaars studenten</option>
-							<option value="v2">3. derdejaars studenten</option>
-							<option value="examenjaar">4. afstudeer studenten</option>
-							<option value="onbekend">5. onbekend</option>
-						</select>
-					</td>
-					<td>Hoe lang is de stage? 
-						<select>
-							<option value="10">10 weken</option>
-							<option value="20">20 weken</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>Begin datum: <input type="date" name="begdatum"></td>
-			</table>
 			
-			<table>
-				 <tr>
-			    	<th>Project</th>
-				    <th>Stage</th>
-				</tr>
-
-				<tr>
-					<td></td>
-					<td>Beschrijving stagebedrijf</td>
-				</tr>
-				
-				<tr>
-					<td></td>
-					<td>1. Bedrijfsnaam: <input type="text" name="bedrijfsnaam"></td>
-				</tr>
-
-				<tr>
-					<td></td>
-					<td>2. Adres: <input type="text" name="adres"></td>
-				</tr>
-				
-				<tr>
-					<td></td>
-					<td>3. Postcode: <input type="text" name="postcode" placeholder="xxxx xx"></td>
-				</tr>
-
-				<tr>
-					<td></td>
-					<td>4. Plaats: <input type="text" name="plaats"></td>
-				</tr>
-
-				<tr>
-					<td></td>
-					<td>5. Sector: <input type="text" name="sector"></td>
-				</tr>
-
-				<tr>
-					<td></td>
-					<td>5. Core business: <input type="text" name="core"></td>
-				</tr>
-
-				<tr>
-					<td>Opmerkingen: <input type="text" name="opmerkingenproject"></td>
-					<td>Opmerkingen: <input type="text" name="opmerkingenstage"></td>
-				</tr>
-			</table>
+			<section>
+				<form action="demo_form.asp" method="get">
+					<fieldset>
+						<legend>Project</legend>
+					    <label for="title">1. Titel:</label><input type="text" id="title"><br />
+					    <label for="assignement">2. Opdrachtomschrijving:</label><input type="text" id="assignement"><br />
+					    <label for="targetaudience">3. Doelgroepomschrijving:</label><input type="text" id="targetaudience"><br />
+					    <label for="goal">4. Doelstelling/intentie van het project:</label><input type="text" id="goal"><br />
+						<label for="duration">5. Looptijd:</label><input type="text" placeholder="x weken" id="duration"><br />
+						<label for="deadline">6. Deadline:</label><input type="date" id="deadline"><br />
+							<p>Geschikt voor</p>
+							<label for="propedeuse">1. eerstejaars studenten</label><input type="radio" id="propedeuse"><br />
+							<label for="v1">2. tweedejaars studenten</label><input type="radio" id="v1"><br />
+							<label for="v2">3. derdejaars studenten</label><input type="radio" id="v2"><br />
+							<label for="exam">4. afstudeer studenten</label><input type="radio" id="exam"><br />
+							<label for="unknown">5. onbekend</label><input type="radio" id="unknown"><br />
+						<label for="commentsproject">Opmerkingen:</label><input type="text" id="commentsproject"><br />
+					</fieldset>
+				</form>
+			</section>
+			
+			<section>
+				<form action="demo_form.asp" method="get">
+					<fieldset>
+						<legend>Stage</legend>
+							<p>Geschikt voor</p>
+							<label for="v1.2">2. tweedejaars studenten</label><input type="radio" id="v1.2"><br />
+							<label for="exam.2">4. afstudeer studenten</label><input type="radio" id="examn.2"><br />
+							<label for="unknown.2">5. onbekend</label><input type="radio" id="unknown.2"><br />
+							<p>1. Hoe lang is de stage?</p>
+							<label for="tenweeks">-10 weken</label><input type="radio" id="tenweeks"><br />
+							<label for="twentyweeks">-20 weken</label><input type="radio" id="twentyweeks"><br />
+						<label for="startdate">2. Begin datum</label><input type="text" id="startdate"><br />
+							<p>Beschrijving werkzaamheden</p>
+							<label for="activities">1. Beschrijving stagewerkzaamheden</label><input type="text" id="activities"><br />
+							<p>Beschrijving stagebedrijf</p>
+							<label for="companyname">1. Bedrijfsnaam:</label><input type="text" id="companyname"><br />
+							<label for="address.2">2. Adres:</label><input type="text" id="address.2"><br />
+							<label for="zipcode.2">3. Postcode:</label><input type="text" id="zipcode.2" placeholder="xxxx xx"><br />
+							<label for="city.2">4. Plaats:</label><input type="text" id="city.2"><br />
+							<label for="sector">5. Sector:</label><input type="text" id="sector"><br />
+							<label for="core">5. Core business:</label><input type="text" id="core"><br />
+							<label for="commentsinternship">Opmerkingen:</label><input type="text" id="commentsinternship"><br />
+					</fieldset>
+				</form>
+			</section>
 
 		</article>
 
