@@ -1,0 +1,28 @@
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+	padding: 1.875em;
+	background-color: #585858;
+}
+
+h1 {
+	text-align: center;
+}
+
+article {
+	width: 35.375em;
+	padding: 1em;;
+	background-color: #858585;
+}
+
+article > section {
+	background-color: #b7b7b7;
+	padding: 1em;
+}
+
+article > section > blockquote {
+	
+	display: inline-block;
+	background-color: black;
+}
