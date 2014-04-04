@@ -1,0 +1,186 @@
+@font-face { font-family: Nexa-b; src: url('NexaBold.otf'); } 
+@font-face { font-family: Nexa; font-weight: bold; src: url('NexaLight.otf');}
+
+:root {
+	background-image: url(bg_opleiding.jpg);
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding: 0.5em;
+	border-radius: 15px;
+}
+
+li:nth-child(1n) {
+	background-color: black;
+}
+
+li:nth-child(2n) {
+	background-color: #333333;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+section > p > a {
+	color: #333333;
+	text-decoration: underline;
+}
+
+section > p > a:visited {
+	color: #333333;;
+}
+
+section > p > a:visited:hover {
+	color: red;
+}
+
+body > nav {
+	width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article {
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px solid #333333;
+	border-left: 2px solid #333333;
+	border-right: 2px solid #333333;
+	padding: 3em;
+	width: 60em;
+	border-radius: 5px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 32%, rgba(239,239,239,1) 76%, rgba(232,232,232,0.17) 96%, rgba(255,255,255,0.04) 99%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(32%,rgba(255,255,255,1)), color-stop(76%,rgba(239,239,239,1)), color-stop(96%,rgba(232,232,232,0.17)), color-stop(99%,rgba(255,255,255,0.04)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 32%,rgba(239,239,239,1) 76%,rgba(232,232,232,0.17) 96%,rgba(255,255,255,0.04) 99%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 32%,rgba(239,239,239,1) 76%,rgba(232,232,232,0.17) 96%,rgba(255,255,255,0.04) 99%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 32%,rgba(239,239,239,1) 76%,rgba(232,232,232,0.17) 96%,rgba(255,255,255,0.04) 99%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 32%,rgba(239,239,239,1) 76%,rgba(232,232,232,0.17) 96%,rgba(255,255,255,0.04) 99%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+body > article > header > h1 {
+	font-family: Nexa;
+	color: #333333;
+	text-shadow: 25px 5px 5px #dedede;
+	font-size: 5em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #333333;
+	border-radius: 15px;
+	padding: 0.5em;
+	width: 5em;
+	overflow: hidden;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+body > article > header > h1:hover {
+	color: red;
+}
+
+p:first-line {
+	font-family: Nexa-b;
+	color: #333333;
+}
+
+legend {
+	color: #333333;
+	font-size: 1.5em;
+}
+
+article > section:nth-of-type(3) {
+	float: left;
+	width: 45%;
+}
+
+article > section:nth-of-type(3) > form > fieldset {
+	padding-bottom: 266px;
+}
+
+input, textarea {
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For all Gecko based browsers */
+          box-sizing: border-box;
+}
+
+fieldset {
+	border: 2px solid #ededed;
+	border-radius: 15px;
+}
+
+label {
+	width: 180px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+
+article > section:nth-of-type(2) > form > fieldset > label {
+	width: 120px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;	
+}
+
+input {
+	outline: none;
+	height:20px; 
+    width: 150px; 
+    padding:5px 8px;	
+}
+
+button[type=submit] {
+	font-family: Nexa;
+	font-size: 2em;
+	padding: 5px 100px 5px 100px;
+	background-color: #00ff18;
+	border-radius: 15px;
+	background-color: ;
+	position: relative;
+	top: 30px;
+	right: 175px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+	button[type=submit]:hover {
+		color: red;	
+		-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+		transform: rotate(360deg);
+	}
+
+article > section:nth-of-type(2) > form > fieldset > input {
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+}
+
