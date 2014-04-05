@@ -1,7 +1,7 @@
 @font-face { font-family: Nexa-b; src: url('NexaBold.otf'); } 
 @font-face { font-family: Nexa; font-weight: bold; src: url('NexaLight.otf');}
 
-@media screen and (max-width: 50.999em) {
+@media screen and (max-width: 60.625em) {
 
 	html, body, :root {
 	    width: 100%;
@@ -26,7 +26,7 @@
 
 	div#containheader {
 		margin: auto;
-		width: 900px;
+		width: 100%;
 	}
 	
 		body header img {
@@ -64,40 +64,55 @@
 	}
 
 	nav ul li {
-		display: inline;
+		color: white;
+		font-size: 1.4em;
 		margin: 0 10px 0 10px;
+		padding: 2px 0 2px 0;
+	}
+
+		nav ul li:hover {
+		text-decoration: underline;
+	}
+
+	nav > ul > li:nth-child(2n) {
+		border-top: 1px solid #333333;
+		border-bottom: 1px solid #333333;
 	}
 
 	nav ul ul {
-		display: block;
-		visibility: hidden;
-		opacity: 0; 
-	    height: 0;
-	    overflow: hidden;
-		-webkit-transition: all 100m ease;
-		-moz-transition: all 100ms ease;
-		-ms-transition: all 100ms ease;
-		-o-transition: all 100ms ease;
-		transition: all 100ms ease;
+		display: none;
 	}
 
 		nav ul li:hover > ul {
-			visibility: visible;
-			opacity: 1;
-    		height: 100%;
+			display: block;
 		}
 
 	nav ul ul {
-	background-color: #ff5300;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute; 
-	top: 5%;
+		background-color: #ff5300;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		margin: 20px 0 10px 0;
+	}
+
+	nav ul ul li:nth-child(2n) {
+		border-top: 1px solid orange;
+		border-bottom: 1px solid orange;
+	}
+
+	nav ul ul li:nth-child(1) {
+		border-top: 1px solid orange;
+	}
+
+	nav ul ul li:nth-child(5) {
+		border-bottom: 1px solid orange;
 	}
 
 		nav ul ul li {
 			background-color: #ff5300;
+			font-size: 0.8em;
+			margin: 0 10px 0 10px;
+			padding: 2px 0 2px 0;
 		}
 			nav ul ul li a {
 				padding: 0 10px 0 10px;
@@ -113,18 +128,22 @@
 				}
 
 	nav ul label {
+		font-size: 1.4em;
 		color: black;
 		margin: 0 -15px 0 30px;
 	}
 
 	nav ul input {
+		font-size: 1.2em;
 		-moz-box-shadow: inset 0 0 2px 1px grey;
 		-webkit-box-shadow: inset 0 0 2px 1px grey;
 		box-shadow: inset 0 0 2px 1px grey;
-		margin: 0 0 0 20px;
+		margin: 20px 0 0 20px;
 		border: 0px solid black;
 		border-radius: 15px;
 		outline: none;
+		width: 50%;
+		height: 30px;
 	}
 
 	a {
@@ -164,7 +183,7 @@
 	div#wrapper {
 		margin-left: auto;
 		margin-right: auto;
-		width: 60%;
+		width: 90%;
 	}
 
 	div#wrapper section:first-child {
@@ -231,7 +250,7 @@
 	body > div#wrapper > article > section > header > h1{
 		font-family: Nexa;
 		color: #333333;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	body > div#wrapper > article > section > header > h1:first-letter {
@@ -252,7 +271,7 @@
 	body > div#wrapper > article > header > h1 {
 		font-family: Nexa;
 		color: #333333;
-		font-size: 3em;
+		font-size: 2em;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -267,20 +286,12 @@
 		transition: all 2s ease;
 	}
 
-	body > div#wrapper > article > header > h1:hover {
-		color: red;
-	}
-
 	article section p:nth-child(1n) {
 		-webkit-transition: all 2s ease;
 		-moz-transition: all 2s ease;
 		-ms-transition: all 2s ease;
 		-o-transition: all 2s ease;
 		transition: all 2s ease;
-	}
-
-	article section p:nth-child(2n):hover {
-		color: red;
 	}
 
 	article section p:first-line {
@@ -302,21 +313,9 @@
 		transition: all 500ms ease;
 	}
 
-	article section:nth-child(5) img:hover {
-		/* source: http://robertnyman.com/css3/css-transitions/css-transitions-rotation.html
-		Firefox */
-		-moz-transform: scale(2) rotate(30deg) translate(50px);
-		/* WebKit */
-		-webkit-transform: scale(1.2) rotate(30deg) translate(50px);
-		/* Opera */
-		-o-transform: scale(2) rotate(30deg) translate(50px);
-		/* Standard */
-		transform: scale(2) rotate(30deg) translate(50px);
-	}
-
 	video {
 		display: block;
-		width: 25em;
+		width: 20em;
 		margin-left: auto;
 		margin-right: auto;
 		-webkit-transition: all .5s ease;
@@ -324,11 +323,6 @@
 		-ms-transition: all .5s ease;
 		-o-transition: all .5s ease;
 		transition: all .5s ease;
-	}
-
-	video:hover {
-		margin-top: 10em;
-		margin-bottom: 10em;
 	}
 
 	aside {
@@ -344,7 +338,7 @@
 	}
 
 	aside h1 a {
-		font-size: 1.7em;
+		font-size: 1em;
 		color: black;
 	}
 
@@ -358,7 +352,7 @@
 
 }
 
-@media screen and (min-width: 51em) { /*--------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 60.688em) { /*--------------------------------------------------------------------------------------------------------*/
 
 	html, body, :root {
 	    width: 100%;
@@ -445,12 +439,12 @@
 		}
 
 	nav ul ul {
-	background-color: #ff5300;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute; 
-	top: 5%;
+		background-color: #ff5300;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute; 
+		top: 5%;
 	}
 
 		nav ul ul li {
@@ -701,7 +695,7 @@
 	}
 
 	aside h1 a {
-		font-size: 1.7em;
+		font-size: 1em;
 		color: black;
 	}
 
@@ -712,5 +706,5 @@
 	aside section h1 {
 		color: #ff5300;
 	}
-	
+
 }
