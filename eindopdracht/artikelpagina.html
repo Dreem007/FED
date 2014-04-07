@@ -8,6 +8,15 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="artikelpagina/artikelpagina.css">
 		<script src="modernizr.min.js"></script>
+		<script>
+		if (Modernizr.geolocation) { 
+		        alert("You support geolocation!");
+		        //App.locateInit();
+		    } else {
+		         alert("No geolocation for you...");
+		        //$('#geo-container').css('display','none');
+		    }
+		</script>
 	    <title>Home</title>
 
 	</head>
@@ -38,11 +47,12 @@
 				<li><a href="">Organisatie</a></li>
 				<li><a href="">Stages en Projecten</a>
 					<ul>
-						<li><a href="">Stages</a></li>
-						<li><a href="">Projecten</a></li>
+						<li><a href="formulierpagina.html">Stages</a></li>
+						<li><a href="formulierpagina.html">Projecten</a></li>
 					</ul>
 				</li>
-				<label for="googlesearch">Search</label><input type="search" name="googlesearch">
+				<label for="googlesearch">Zoeken</label><input type="search" name="googlesearch">
+				<input type="submit" value="Zoek">
 			</ul>
 		</nav>
 
@@ -252,41 +262,50 @@
 
 			<ul>
 				<li><a href="">Opleiding</a></li>
-				<ul>
-					<li><a href="">Visie & Beleid</a></li>
-					<li><a href="">Opbouw Studieprogramma</a></li>
-					<li><a href="">Competenties</a></li>
-					<li><a href="">Diploma</a></li>
-					<li><a href="">Beroepen</a></li>
-				</ul>
+				<li>
+					<ul>
+						<li><a href="">Visie & Beleid</a></li>
+						<li><a href="">Opbouw Studieprogramma</a></li>
+						<li><a href="">Competenties</a></li>
+						<li><a href="">Diploma</a></li>
+						<li><a href="">Beroepen</a></li>
+					</ul>
+				</li>
 
 				<li><a href="">Onderwijsprogramma</a></li>
-				<ul>
-					<li><a href="">Mededelingen</a></li>
-					<li><a href="">Uitagenda</a></li>
-					<li><a href="">Propedeuse</a></li>
-					<li><a href="">Verdieping 1</a></li>
-					<li><a href="">Verdieping 2</a></li>
-					<li><a href="">Afstuderen</a></li>
-				</ul>
+				
+				<li>
+					<ul>
+						<li><a href="">Mededelingen</a></li>
+						<li><a href="">Uitagenda</a></li>
+						<li><a href="">Propedeuse</a></li>
+						<li><a href="">Verdieping 1</a></li>
+						<li><a href="">Verdieping 2</a></li>
+						<li><a href="">Afstuderen</a></li>
+					</ul>
+				</li>
 			
 				<li><a href="">Organisatie</a></li>
-				<ul>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Docenten</a></li>
-					<li><a href="">Onderwijsbureau</a></li>
-					<li><a href="">Stagebureau</a></li>
-					<li><a href="">Buitenlandbureau</a></li>
-					<li><a href="">Examencommissie</a></li>
-					<li><a href="">Decaan</a></li>
-				</ul>
+				<li>
+					<ul>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Docenten</a></li>
+						<li><a href="">Onderwijsbureau</a></li>
+						<li><a href="">Stagebureau</a></li>
+						<li><a href="">Buitenlandbureau</a></li>
+						<li><a href="">Examencommissie</a></li>
+						<li><a href="">Decaan</a></li>
+					</ul>
+				</li>
 
 				<li><a href="">Stages en Projecten</a></li>
-				<ul>
-					<li><a href="">Stages</a></li>
-					<li><a href="">Projecten</a></li>
-				</ul>
+				<li>
+					<ul>
+						<li><a href="">Stages</a></li>
+						<li><a href="">Projecten</a></li>
+					</ul>
+				</li>
 			</ul>
 			
 			<div>
@@ -303,7 +322,7 @@
 				<h1>Zoeken</h1>
 				<form>
 					<input type="text">
-					<input type="submit">
+					<input type="submit" value="Zoek">
 				</form>
 			</div>
 			
