@@ -5,17 +5,16 @@
 	<head class="no-js">
 
 		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 		<link rel="stylesheet" href="artikelpagina/artikelpagina.css">
+		<script src="jquery-1.11.0.min.js"></script>
 		<script src="modernizr.min.js"></script>
 		<script>
-		if (Modernizr.geolocation) { 
-		        alert("You support geolocation!");
-		        //App.locateInit();
-		    } else {
-		         alert("No geolocation for you...");
-		        //$('#geo-container').css('display','none');
-		    }
+		Modernizr.load([
+			{
+			    test: Modernizr.mq('(max-width: 585px)'), 
+			    yep: 'jquery.js'              
+			]);
 		</script>
 	    <title>Home</title>
 
@@ -34,8 +33,8 @@
 		<nav>
 			<ul>
 				<li><a href="">Home</a></li>
-				<li><a href="">Opleiding</a>
-					<ul>
+				<li id="collapse-one">Opleiding
+					<ul id="result-one">
 						<li><a href="">Visie &amp; Beleid</a></li>
 						<li><a href="">Opbouw Studieprogramma</a></li>
 						<li><a href="">Competenties</a></li>
@@ -45,8 +44,8 @@
 				</li>
 				<li><a href="">Onderwijsprogramma</a></li>
 				<li><a href="">Organisatie</a></li>
-				<li><a href="">Stages en Projecten</a>
-					<ul>
+				<li id="collapse-two">Stages en Projecten
+					<ul id="result-two">
 						<li><a href="formulierpagina.html">Stages</a></li>
 						<li><a href="formulierpagina.html">Projecten</a></li>
 					</ul>
@@ -308,7 +307,7 @@
 				</li>
 			</ul>
 			
-			<div>
+			<section>
 				<h1>Contact</h1>
 					CMD Amsterdam
 					Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam
@@ -316,27 +315,27 @@
 					Telefoon: 020 595 1855
 					Email: <a href="#">info@cmd.hva.nl</a>
 					RSS: <a href="#">Feed intranet</a>
-			</div>
+			</section>
 			
-			<div>
+			<section>
 				<h1>Zoeken</h1>
 				<form>
 					<input type="text">
 					<input type="submit" value="Zoek">
 				</form>
-			</div>
+			</section>
 			
-			<div>
+			<section>
 				<h1>About</h1>
 				CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
 				Op de opleiding Communication & Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie. 
-			</div>
+			</section>
 			
-			<div>
+			<section>
 				<h1>Credits</h1>
 				© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
 				<a href="#">Geef ons feedback</a>
-			</div>
+			</section>
 		</footer>
 
 	</body>
