@@ -361,13 +361,21 @@
 		display: none;
 	}
 
-	aside h1:hover ~ section {
+	aside h1 {
+		color: #ff5300;
+	}
+
+	aside h1:hover {
+		text-decoration: underline;
+	}
+
+	/*aside h1:hover ~ section {
 			display: block;
 		}
 
 	aside:hover > section {
 			display: block;
-		}
+		}*/
 
 	footer {
 		color: white;
@@ -392,25 +400,25 @@
 		padding-bottom: -50px;
 	}
 
-	footer section:nth-child(3) {
+	footer div:nth-child(3) {
 		font-size: 1.2em;
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	footer section:nth-child(4) {
+	footer div:nth-child(4) {
 		display: none;
 	}
 
-	footer section:nth-child(5) {
+	footer div:nth-child(5) {
 		font-size: 1.2em;
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
 
-	section:nth-child(6) {
+	div:nth-child(6) {
 		text-align: right;
 		font-size: 0.6em;
 		width: 100%;
@@ -496,7 +504,7 @@
 	}
 
 		nav ul li > ul {
-			display: block;
+			display: none;
 		}
 
 	nav ul ul {
@@ -794,25 +802,25 @@
 		padding-bottom: -50px;
 	}
 
-	footer section:nth-child(3) {
+	footer div:nth-child(3) {
 		font-size: 1.2em;
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	footer section:nth-child(4) {
+	footer div:nth-child(4) {
 		display: none;
 	}
 
-	footer section:nth-child(5) {
+	footer div:nth-child(5) {
 		font-size: 1.2em;
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
 
-	section:nth-child(6) {
+	div:nth-child(6) {
 		text-align: right;
 		font-size: 0.6em;
 		width: 100%;
@@ -1248,7 +1256,7 @@
 		padding-bottom: -50px;
 	}
 
-	footer section:nth-child(3) {
+	footer div:nth-child(3) {
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1258,17 +1266,17 @@
 		padding-right: 50px;
 	}
 
-	footer section:nth-child(4) {
+	footer div:nth-child(4) {
 		width: 80%;
 	}
 
-	footer section:nth-child(5) {
+	footer div:nth-child(5) {
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
 
-	section:nth-child(6) {
+	div:nth-child(6) {
 		text-align: right;
 		font-size: 0.3em;
 		width: 100%;

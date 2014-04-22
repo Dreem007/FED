@@ -39,11 +39,28 @@ $(document).ready(function() {
 				}
 			});
 
-			$("#collapse-two").click(function() {
-				if($("#result-two").is(":hidden")){
-					$("#result-two").fadeIn();
-				} else {
-					$("#result-two").fadeOut();
-				}
-			});
+		$("#collapse-two").click(function() {
+			if($("#result-two").is(":hidden")){
+				$("#result-two").fadeIn();
+			} else {
+				$("#result-two").fadeOut();
+			}
+		});
+
+		$("#collapse-three").click(function() {
+			if($(".result-three").is(":hidden")){
+				$(".result-three").fadeIn();
+			} else {
+				$(".result-three").fadeOut();
+			}
+		});
+
+		$("#collapse-four").click(function() {
+			if($(".result-four").is(":hidden")){
+				$(".result-four").fadeIn();
+			} else {
+				$(".result-four").fadeOut();
+			}
+		});
+
 });
