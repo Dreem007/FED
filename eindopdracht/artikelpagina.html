@@ -8,14 +8,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 		<link rel="stylesheet" href="artikelpagina/artikelpagina.css">
 		<script src="jquery-1.11.0.min.js"></script>
+		<script src="jquery.js"></script>
 		<script src="modernizr.min.js"></script>
-		<script>
-		Modernizr.load([
-			{
-			    test: Modernizr.mq('(max-width: 585px)'), 
-			    yep: 'jquery.js'              
-			]);
-		</script>
+		<!--<script>
+		if (Modernizr.geolocation) { 
+		        alert("You support geolocation!");
+		        //App.locateInit();
+		    } else {
+		         alert("No geolocation for you...");
+		        //$('#geo-container').css('display','none');
+		    }
+		</script>-->
 	    <title>Home</title>
 
 	</head>

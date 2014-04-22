@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	if($(window).width() <= 585){
+	/*if($(window).width() <= 585){
 
 		$("#collapse-one").click(function() {
 			if($("#result-one").is(":hidden")){
@@ -29,6 +29,21 @@ $(document).ready(function() {
 				  );
 			}
 		});
-	};
+	};*/
 
+		$("#collapse-one").click(function() {
+				if($("#result-one").is(":hidden")){
+					$("#result-one").fadeIn();
+				} else {
+					$("#result-one").fadeOut();
+				}
+			});
+
+			$("#collapse-two").click(function() {
+				if($("#result-two").is(":hidden")){
+					$("#result-two").fadeIn();
+				} else {
+					$("#result-two").fadeOut();
+				}
+			});
 });
