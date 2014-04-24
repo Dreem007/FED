@@ -178,13 +178,13 @@
 		margin-right: auto;
 	}
 
-	div#wrapper {
+	article:nth-child(3) {
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
 
-	div#wrapper section:first-child {
+	article:nth-child(3) section:first-child {
 		margin: 7px 0 0 0;
 		-moz-box-shadow: inset 0 0 100px 5px #333333;
 		-webkit-box-shadow: inset 0 0 100px 5px #333333;
@@ -194,39 +194,32 @@
 		background-image: url("../images/wireflow.png");
 	}
 
-	div#wrapper > section:nth-child(2) {
-		color: white;
-		width: 100;
-		background-color: #666666;
-		margin: -10px 0 0 0;
+	article:nth-child(3) section:nth-child(2) {
+		font-size: 1.4em;
 	}
 
-		div#wrapper >section:nth-child(2) p {
-				padding: 15px;
-		}
-
-	body > div#wrapper > article > section > header > h1{
+	body > article:nth-child(3) > section > header > h1{
 		font-family: Nexa;
 		color: #333333;
 		font-size: 1.2em;
 	}
 
-	body > div#wrapper > article > section > header > h1:first-letter {
+	body > article:nth-child(3) > section > header > h1:first-letter {
 		font-family: Nexa;
 		color: #ff5300;
 		font-size: 2em;
 	}
 
-	body > div#wrapper > article > section > h2 {
+	body > article:nth-child(3) > section > h2 {
 		font-family: Nexa;
 		font-size: 1.3em;
 	}
 
-	body > div#wrapper > article > section > p > a {
+	body > article:nth-child(3) > section > p > a {
 		color: #ff5300;
 	}
 
-	body > div#wrapper > article > header > h1 {
+	body > article:nth-child(3) > header > h1 {
 		font-family: Nexa;
 		color: #333333;
 		font-size: 2em;
@@ -286,7 +279,7 @@
 		border-radius: 15px;
 	}
 
-	div#wrapper section:nth-child(6) form fieldset {
+	article:nth-child(3) section:nth-child(6) form fieldset {
 		margin-bottom: 120px;
 	}
 
@@ -563,13 +556,13 @@
 		margin-right: auto;
 	}
 
-	div#wrapper {
+	article:nth-child(3) {
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
 
-	div#wrapper section:first-child {
+	article:nth-child(3) section:first-child {
 		margin: 7px 0 0 0;
 		-moz-box-shadow: inset 0 0 100px 5px #333333;
 		-webkit-box-shadow: inset 0 0 100px 5px #333333;
@@ -579,7 +572,7 @@
 		background-image: url("../images/wireflow.png");
 	}
 
-		div#wrapper section:first-child div#containtext {
+		article:nth-child(3) section:first-child div#containtext {
 			width: 30%;
 			background-color: rgba(0, 0, 0, 0.6);
 			padding: 10px;
@@ -588,55 +581,44 @@
 			box-shadow: inset 0 0 30px 5px #333333;
 		}
 
-		div#wrapper section:first-child header h1 {
+		article:nth-child(3) section:first-child header h1 {
 
 		}
 
-		div#wrapper section:first-child h2 {
+		article:nth-child(3) section:first-child h2 {
 
 		}
 
-		div#wrapper section:first-child p {
+		article:nth-child(3) section:first-child p {
 		
 		}
 
-		div#wrapper section:first-child p a {
+		article:nth-child(3) section:first-child p a {
 			color: #ff5300;
 		}
 
-	div#wrapper > section:nth-child(2) {
-		color: white;
-		width: 100;
-		background-color: #666666;
-		margin: -10px 0 0 0;
-	}
-
-		div#wrapper >section:nth-child(2) p {
-				padding: 15px;
-		}
-
-	body > div#wrapper > article > section > header > h1{
+	body > article:nth-child(3) > section > header > h1{
 		font-family: Nexa;
 		color: #333333;
 		font-size: 2em;
 	}
 
-	body > div#wrapper > article > section > header > h1:first-letter {
+	body > article:nth-child(3) > section > header > h1:first-letter {
 		font-family: Nexa;
 		color: #ff5300;
 		font-size: 2em;
 	}
 
-	body > div#wrapper > article > section > h2 {
+	body > article:nth-child(3) > section > h2 {
 		font-family: Nexa;
 		font-size: 1.3em;
 	}
 
-	body > div#wrapper > article > section > p > a {
+	body > article:nth-child(3) > section > p > a {
 		color: #ff5300;
 	}
 
-	body > div#wrapper > article > header > h1 {
+	body > article:nth-child(3) > header > h1 {
 		font-family: Nexa;
 		color: #333333;
 		font-size: 3em;
@@ -654,7 +636,7 @@
 		transition: all 2s ease;
 	}
 
-	body > div#wrapper > article > header > h1:hover {
+	body > article:nth-child(3) > article > header > h1:hover {
 		color: red;
 	}
 
@@ -711,7 +693,7 @@
 		border-radius: 15px;
 	}
 
-	div#wrapper section:nth-child(6) form fieldset {
+	article:nth-child(3) section:nth-child(6) form fieldset {
 		margin-bottom: 120px;
 	}
 
@@ -991,14 +973,14 @@
 		margin-right: auto;
 	}
 
-	div#wrapper {
+	article:nth-child(3) {
 		margin-left: auto;
 		margin-right: auto;
 		width: 60%;
 		height: 80%;
 	}
 
-	div#wrapper section:first-child {
+	article:nth-child(3) section:first-child {
 		margin: 7px 0 0 0;
 		-moz-box-shadow: inset 0 0 100px 5px #333333;
 		-webkit-box-shadow: inset 0 0 100px 5px #333333;
@@ -1008,7 +990,7 @@
 		background-image: url("../images/wireflow.png");
 	}
 
-		div#wrapper section:first-child div#containtext {
+		article:nth-child(3) section:first-child div#containtext {
 			width: 30%;
 			background-color: rgba(0, 0, 0, 0.6);
 			padding: 10px;
@@ -1017,55 +999,44 @@
 			box-shadow: inset 0 0 30px 5px #333333;
 		}
 
-		div#wrapper section:first-child header h1 {
+		article:nth-child(3) section:first-child header h1 {
 
 		}
 
-		div#wrapper section:first-child h2 {
+		article:nth-child(3) section:first-child h2 {
 
 		}
 
-		div#wrapper section:first-child p {
+		article:nth-child(3) section:first-child p {
 		
 		}
 
-		div#wrapper section:first-child p a {
+		article:nth-child(3) section:nth-child(2) p a {
 			color: #ff5300;
 		}
 
-	div#wrapper > section:nth-child(2) {
-		color: white;
-		width: 100;
-		background-color: #666666;
-		margin: -10px 0 0 0;
-	}
-
-		div#wrapper >section:nth-child(2) p {
-				padding: 15px;
-		}
-
-	body > div#wrapper > article > section > header > h1{
+	body > article:nth-child(3) > article > section > header > h1{
 		font-family: Nexa;
 		color: #333333;
 		font-size: 2em;
 	}
 
-	body > div#wrapper > article > section > header > h1:first-letter {
+	body > article:nth-child(3) > article > section > header > h1:first-letter {
 		font-family: Nexa;
 		color: #ff5300;
 		font-size: 2em;
 	}
 
-	body > div#wrapper > article > section > h2 {
+	body > article:nth-child(3) > article > section > h2 {
 		font-family: Nexa;
 		font-size: 1.3em;
 	}
 
-	body > div#wrapper > article > section > p > a {
+	body > article:nth-child(3) > article > section > p > a {
 		color: #ff5300;
 	}
 
-	body > div#wrapper > article > header > h1 {
+	body > article:nth-child(3) > header > h1 {
 		font-family: Nexa;
 		color: #333333;
 		font-size: 3em;
@@ -1083,7 +1054,7 @@
 		transition: all 2s ease;
 	}
 
-	body > div#wrapper > article > header > h1:hover {
+	body > article:nth-child(3) > header > h1:hover {
 		color: red;
 	}
 
@@ -1126,9 +1097,6 @@
 		width: 45%;
 	}
 
-	article > section:nth-of-type(3) > form > fieldset {
-	}
-
 	input, textarea {
 		-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
 	     -moz-box-sizing: border-box; /* For all Gecko based browsers */
@@ -1140,7 +1108,7 @@
 		border-radius: 15px;
 	}
 
-	div#wrapper section:nth-child(6) form fieldset {
+	article:nth-child(3) section:nth-child(6) form fieldset {
 		margin-bottom: 120px;
 	}
 
