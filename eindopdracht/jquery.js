@@ -49,9 +49,10 @@ $(document).ready(function() {
 	/*						Einde aside verborgen			*/
 	/*						Verbergen forms					*/
 
-	$("#submit").hide();
 
 	if($(window).width() >= 585){
+
+	$("#submit").hide();
 
 		$("#options").change(function() {
 	        if ($(this).val() != "company") {
