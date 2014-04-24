@@ -280,7 +280,7 @@
 	}
 
 	article:nth-child(3) section:nth-child(6) form fieldset {
-		margin-bottom: 120px;
+		margin-bottom: 20px;
 	}
 
 	fieldset label {
@@ -312,8 +312,6 @@
 		background-color: #ff5300;
 		border-radius: 15px;
 		background-color: ;
-		position: relative;
-		top: 80px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -393,6 +391,7 @@
 		background-image: url("../images/headerbackground.png");
 		background-size: 3000px;
 		background-position: -100px -600px;
+		background-attachment:fixed;
 		text-align: center;
 		padding: 0;
 		margin: 0;
@@ -693,8 +692,12 @@
 		border-radius: 15px;
 	}
 
+	section:nth-child(5), section:nth-child(6) {
+		display: none;
+	}
+
 	article:nth-child(3) section:nth-child(6) form fieldset {
-		margin-bottom: 120px;
+		margin-bottom: 50px;
 	}
 
 	fieldset label {
@@ -725,10 +728,12 @@
 		padding: 5px 100px 5px 100px;
 		background-color: #ff5300;
 		border-radius: 15px;
-		background-color: ;
 		position: relative;
-		top: 80px;
-		right: 175px;
+		bottom: 25px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		clear: left;
 		-webkit-transition: all 1s ease;
 		-moz-transition: all 1s ease;
 		-ms-transition: all 1s ease;
@@ -811,6 +816,7 @@
 		background-image: url("../images/headerbackground.png");
 		background-size: 3000px;
 		background-position: -100px -600px;
+		background-attachment:fixed;
 		text-align: center;
 		padding: 0;
 		margin: 0;
@@ -1108,8 +1114,17 @@
 		border-radius: 15px;
 	}
 
+	section:nth-child(5), section:nth-child(6) {
+		display: none;
+	}
+
 	article:nth-child(3) section:nth-child(6) form fieldset {
-		margin-bottom: 120px;
+		margin-bottom: 100px;
+	}
+
+	section:nth-child(6) {
+		position: relative;
+		right: 370px;
 	}
 
 	fieldset label {
@@ -1148,10 +1163,11 @@
 		padding: 5px 100px 5px 100px;
 		background-color: #ff5300;
 		border-radius: 15px;
-		background-color: ;
+		display: block;
 		position: relative;
-		top: 80px;
-		right: 175px;
+		top: 50px;
+		margin-left: auto;
+		margin-right: auto;
 		-webkit-transition: all 1s ease;
 		-moz-transition: all 1s ease;
 		-ms-transition: all 1s ease;
@@ -1202,13 +1218,12 @@
 	}
 
 	footer div:nth-child(3) {
-		width: 70%;
+		width: 30%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: -100px;
 		position: relative;
 		bottom: 80px;
-		padding-right: 50px;
 	}
 
 	footer div:nth-child(4) {
